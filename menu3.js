@@ -1778,7 +1778,7 @@
         // Create menu button
         const menuButton = document.createElement('button');
         menuButton.id = 'floatingMenuButton';
-        menuButton.className = 'w-14 h-14 rounded-full text-white flex items-center justify-center shadow-lg transition-all duration-300 fixed z-40';
+        menuButton.className = 'w-14 h-14 rounded-full text-white flex items-center justify-center shadow-lg transition-all duration-300 fixed z-1000';
         menuButton.style.backgroundColor = config.menuButtonColor;
         menuButton.style.top = '50%';
         menuButton.style.transform = 'translateY(-50%)';
@@ -1796,12 +1796,12 @@
         // Create overlay
         const overlay = document.createElement('div');
         overlay.id = 'floatingMenuOverlay';
-        overlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 hidden opacity-0 transition-opacity duration-300';
+        overlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 hidden opacity-0 transition-opacity duration-1000';
         
         // Create menu container
         const menuContainer = document.createElement('div');
         menuContainer.id = 'floatingMenuContainer';
-        menuContainer.className = 'fixed inset-0 flex items-center justify-center z-50 hidden';
+        menuContainer.className = 'fixed inset-0 flex items-center justify-center z-1000 hidden';
         
         // Create menu content
         menuContainer.innerHTML = `
